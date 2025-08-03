@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overflow</title>
+    <style>
+        .item{
+            width:300px;
+            height:300px;
+            border: 1px solid green;
+            margin: 20px;
+            overflow-y: auto;
+        }
+        #item-3{            
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 200px;
+            border: 1px solid red;
+            white-space: nowrap;
+            
+        }
+    </style>
 </head>
 <body>
+    <div class="items">
+        <div class="item">
+            <h1>This is headline</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse nostrum hic facilis, sapiente fugit quos accusamus aspernatur quae veritatis similique mollitia sint, quam commodi optio. Molestias quos nesciunt optio sint! Rem iure sit modi reprehenderit veniam labore aliquid, sunt iusto nihil accusantium! Aspernatur sint porro laudantium dolores deserunt blanditiis consequatur maxime quibusdam similique atque, dignissimos laborum nostrum odio quis. Rem tenetur exercitationem quo sed consectetur laborum autem quia. Incidunt enim illum, officia vel voluptates doloremque quod nam explicabo veniam facilis reiciendis sed hic at quibusdam quaerat tempore porro adipisci quasi est pariatur repellendus, minus autem labore. Numquam, inventore ipsam doloremque id placeat magni nam. Eaque, dolorem! Perferendis impedit quaerat deleniti harum quibusdam voluptatem labore quis libero nesciunt, soluta id repudiandae veniam sequi consequuntur delectus sapiente accusamus voluptate adipisci! Quae enim cum in veniam reprehenderit dolore suscipit accusantium voluptatibus vero autem, quidem amet excepturi asperiores, possimus nisi neque repellendus illo deserunt. Laudantium labore dolorem quasi aspernatur veniam deleniti eligendi, perferendis debitis vitae! Asperiores aut quo aspernatur ullam, quidem aliquam fuga nulla accusamus maiores impedit eos, dicta totam dolor ut laborum saepe in placeat harum debitis minus natus neque repudiandae. Corporis voluptates enim unde nostrum asperiores perferendis suscipit deserunt, explicabo velit obcaecati.</p>
+        </div>
+        <div class="item">
+            <h1>This is headline</h1>
+            <p>Hic consectetur dicta qui nihil expedita nemo itaque corrupti velit officiis, voluptates doloremque corporis, quam necessitatibus, amet animi. Distinctio sint ullam quibusdam veritatis doloribus ipsum modi minima porro dignissimos, iusto nihil assumenda consequuntur mollitia dolor placeat perferendis suscipit ratione deserunt omnis? A dolores natus tenetur perspiciatis unde qui asperiores porro debitis iure, fuga tempora sit, beatae quae. Obcaecati ipsa perferendis cum libero molestiae, alias sequi ipsam iste dignissimos adipisci dolorum dolorem minus totam necessitatibus placeat. Ratione at ullam, officiis dolorum deserunt molestias quaerat rem explicabo doloremque voluptatum accusamus, error fugiat dignissimos accusantium sapiente ipsam ea illum similique sunt totam! Iure quos at, nobis architecto eius fuga natus cum omnis deserunt aliquid soluta maiores eligendi autem necessitatibus corporis nulla. Reiciendis vero praesentium eius architecto nobis, velit porro quod repudiandae neque accusamus quia minus doloribus! Veniam tenetur quibusdam id accusantium, quidem soluta nisi recusandae sapiente. Rem quibusdam iusto officiis porro? Est at explicabo dicta, suscipit exercitationem ipsam corrupti rem corporis quam ducimus labore minus error ratione repellat porro aut voluptatibus! Voluptatem veniam similique facilis necessitatibus molestias aut maxime aspernatur assumenda delectus, ipsa magni inventore facere cum voluptatibus sed nulla odio voluptas fuga tenetur sint ex quia exercitationem. Et eligendi quae quisquam vitae!</p>
+        </div>
+ 
+            <p id="item-3">Hic consectetur dicta qui nihil expedita nemo itaque corrupti velit officiis, voluptates doloremque corporis, quam necessitatibus, amet animi. Distinctio sint ullam quibusdam veritatis doloribus ipsum modi minima porro dignissimos, iusto nihil assumenda consequuntur mollitia  Hic consectetur dicta qui nihil expedita nemo itaque corrupti velit officiis, voluptates doloremque corporis, quam necessitatibus, amet animi. Distinctio sint ullam quibusdam veritatis doloribus ipsum modi minima porro dignissimos, iusto nihil assumenda consequuntur mollitiaHic consectetur dicta qui nihil expedita nemo itaque corrupti velit officiis, voluptates doloremque corporis, quam necessitatibus, amet animi. Distinctio sint ullam quibusdam veritatis doloribus ipsum modi minima porro dignissimos, iusto nihil assumenda consequuntur mollitia</p>
+        
+    </div>
     
 </body>
 </html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket</title>
+    <style>
+        .field{
+            border: 1px solid gray;
+            height: 520px;
+            width:1800px;
+            margin-top: 500px;
+        }
+
+        /* Schedue part */
+
+        .field:hover .bat{
+            transform: rotate(-90deg);
+            transform-origin: top right;
+        } 
+        .field:hover .ball{
+            transform:translate(1000px, -500px) 
+            
+        }
+        .bat{
+            transition: all .3s ease-in;
+        }
+       
+        .ball{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            left: 740px;
+            top: -50px;
+            transition: all 0.5s ease-in 0.18s;
+        }
+
+
+        /* Animation Part */
+        /* .bat{
+           animation: bat 1.25s ease-in infinite; 
+        }
+        @keyframes bat{
+            
+            0%{
+                transform: rotate(0);
+            }
+            50%{
+                transform: rotate(-90deg);
+                transform-origin: top right;
+            }
+            100%{
+                transform: rotate(0);
+            }
+
+
+        }
+
+
+         .ball{
+            width: 50px;
+            height:50px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            left:1750px;
+            top:-200px;
+            animation: ball 3s ease-in infinite;
+         }
+        @keyframes ball{
+            0%{
+            left:1750px;
+            top:-200px;      
+            }
+            25%{
+            left:1300px;
+            top:55px;
+            height:45px
+            }
+            50%{
+            left:800px;
+            top:-80px;
+            height:45px
+            }
+            100%{
+            left:2000px;
+            top:-800px; 
+            height: 35px;     
+            }
+         } */
+
+    </style>
+</head>
+<body>
+    <div class="field">
+        <img class="bat" src="imges/bat.png" alt="">       
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

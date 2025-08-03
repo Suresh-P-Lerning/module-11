@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+    <style>
+     :root{
+        --primary-color:rgb(255, 166, 0);
+        --secondary-color:rgb(0, 141, 12);
+        --font-size:20px;
+
+     }   
+    .mainTitle{
+        color:var(--primary-color)
+    }
+    .secondaryTitle{
+        background-color: var(--primary-color);
+    }
+    .variableTest{
+        border: 1px solid var(--primary-color);
+
+    }
+    .variableTitle{
+
+    }
+    .variableData{
+        color: var(--primary-color);
+
+    }
+    .container{
+        grid-template-columns: 300px calc(100% - 300px - 20px);
+        display: grid;
+        gap: 20px; 
+        margin-top: 50px;
+    }
+    .containerHead{
+        background-color: var(--secondary-color);
+    }
+    .containerData{
+        background-color: var(--primary-color);
+    }
+    </style>
+</head>
+<body>
+    <h1 class="mainTitle">CSS Variable Test</h1>
+    <h4 class="secondaryTitle">Lorem ipsum dolor sit</h4>
+    <div class="variableTest">
+        <h1 class="variableTitle">Lorem ipsum dolor sit amet.</h1>
+        <p class="variableData">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eum voluptas, explicabo quod asperiores vero. Aut deserunt natus magni libero quis omnis a iusto! A quibusdam repellat rem illo esse.</p>
+    </div>
+
+    <div class="container">
+        <div class="containerHead">
+            <h1>Hello Bangladesh</h1>
+        </div>
+        <div class="containerData">
+            <h1>Hello Chittagong</h1>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container{
+            width:150px;
+            height: 150px;
+            background-color: rgb(14, 49, 37);
+            margin-bottom: 20px;
+        }
+        .inner{
+            width:150px;
+            height: 150px;
+            background-color: rgb(135, 236, 253);
+            margin-bottom: 20px;
+            transform: scale(0.75) rotate(75deg) translateX(-50px) ;
+
+        }
+        .transisitonTest{
+            width:200px;
+            height:200px;
+            background-color: aquamarine;
+            border: 1px solid gray;
+            transition: 1s linear, background-color 5s, border-radius 2s;
+        }
+        .transisitonTest:hover{
+            background-color: blueviolet;
+            width:300px;
+            border-radius:50%;
+            transform: rotate(60deg) translateX(300px)
+        }
+    </style>
+</head>
+<body>
+    <h2>Transform and Translate</h2>
+    <div class="container">
+        <div class="inner">inner-1</div>
+    </div>
+    <div class="container">
+        <div class="inner">inner-2</div>
+    </div>
+    <div class="container">
+        <div class="inner">inner-3</div>
+    </div>
+    <div class="transisitonTest">
+
+    </div>
+</body>
+</html>
